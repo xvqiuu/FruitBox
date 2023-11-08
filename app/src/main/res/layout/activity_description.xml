@@ -16,16 +16,18 @@
 
     <ImageView
         android:id="@+id/detail_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
         android:contentDescription="Item Image"
+
         />
 
     <TextView
         android:id="@+id/desc_name"
         android:text="Fruit Name"
         style="@style/description"
+        android:layout_marginTop="15dp"
         />
 
     <TextView

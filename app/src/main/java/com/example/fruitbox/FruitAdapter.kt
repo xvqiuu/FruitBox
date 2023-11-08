@@ -31,7 +31,6 @@ class FruitAdapter(private val listFruits: List<Fruit>,
         }
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemFruitViewHolder {
         val binding = ItemFruitBinding.inflate(LayoutInflater.from(parent.context),parent,
             false)
@@ -48,8 +47,9 @@ class FruitAdapter(private val listFruits: List<Fruit>,
 
         // Ambil warna dari sumber daya warna
         val backgroundColorResId = when (fruit.taste) {
-            "Manis" -> R.color.green
-            "Asam" -> R.color.cyan
+            "Manis" -> R.color.orange
+            "Asam" -> R.color.red
+
             else -> R.color.white
         }
         holder.itemView.setBackgroundResource(backgroundColorResId)

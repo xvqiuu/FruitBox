@@ -19,10 +19,6 @@ class DecriptionActivity : AppCompatActivity() {
         binding = ActivityDescriptionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar) // Mengatur Toolbar sebagai ActionBar
-        supportActionBar?.title = "FruitBox" // Memberikan judul pada Action Bar
-
         val fruit = intent.getParcelableExtra<Fruit>(EXTRA_FRUIT)
 
         fruit?.let {
