@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Buah"
+        style="@style/Title"
+        android:fontFamily="@font/poppinsmedium"
+        />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:contentDescription="Item Image"
+        />
+
+    <TextView
+        android:id="@+id/desc_name"
+        android:text="Fruit Name"
+        style="@style/description"
+        />
+
+    <TextView
+        android:id="@+id/desc_color"
+        android:text="Color"
+        style="@style/description"
+        />
+
+    <TextView
+        android:id="@+id/desc_taste"
+        android:text="Taste"
+        style="@style/description"
+        />
+
+    <TextView
+        android:id="@+id/desc_nutrition"
+        android:text="Nutrition"
+        style="@style/description"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:text="Kembali"
+        style="@style/button"
+        />
+
+</LinearLayout>
