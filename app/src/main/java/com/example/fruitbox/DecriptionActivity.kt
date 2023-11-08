@@ -28,11 +28,11 @@ class DecriptionActivity : AppCompatActivity() {
                 descColor.text = "Warna: " + it.color
                 descTaste.text = "Rasa: " + it.taste
                 descNutrition.text = "Kandungan: " + it.nutrition
-            }
-        }
 
-        binding.btnBack.setOnClickListener {
-            finish() // Kembali ke halaman sebelumnya
+                btnBack.setOnClickListener {
+                    finish() //kembali ke halaman sebelumnya
+                }
+            }
         }
     }
 }

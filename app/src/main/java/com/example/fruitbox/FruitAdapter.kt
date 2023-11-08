@@ -13,7 +13,6 @@ class FruitAdapter(private val listFruits: List<Fruit>,
                      private val onClickFruit: OnClickFruit) :
     RecyclerView.Adapter<FruitAdapter.ItemFruitViewHolder>() {
 
-
     inner class ItemFruitViewHolder (private val binding : ItemFruitBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data : Fruit) {
@@ -47,8 +46,8 @@ class FruitAdapter(private val listFruits: List<Fruit>,
 
         // Ambil warna dari sumber daya warna
         val backgroundColorResId = when (fruit.taste) {
-            "Manis" -> R.color.orange
-            "Asam" -> R.color.red
+            "Manis" -> R.color.green
+            "Asam" -> R.color.yellow
 
             else -> R.color.white
         }

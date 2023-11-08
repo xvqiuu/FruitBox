@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@color/orange"
+        android:background="@color/red"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         tools:ignore="MissingConstraints"
@@ -24,20 +24,13 @@
         android:text="Daftar Buah"
         style="@style/Title"
         android:fontFamily="@font/poppinsmedium"
-
         />
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rv_fruit"
-            tools:listitem="@layout/item_fruit"
-            />
-
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_fruit"
+        tools:listitem="@layout/item_fruit"
+        />
 
 </LinearLayout>
